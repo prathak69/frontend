@@ -1,9 +1,12 @@
-import './App.css';
+import "./App.css";
+import { Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
     <div className="App">
-      hello
+      <Route path="/" components={Homepage} />
+      <Route path="/chats" />
     </div>
   );
 }
